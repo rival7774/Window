@@ -1,0 +1,79 @@
+.page-footer {
+  background-color: $bd-footer;
+  padding: 10.18em 1em 11.81em;
+
+  @media (min-width: $tablet) {
+    padding: 1em;
+    min-height: 7.68em;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: calc(50% - 36.0625rem);
+    padding-right: calc(50% - 36.0625rem);
+  }
+}
+
+.page-footer__text {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    font-weight: 900;
+    font-size: 1.31rem;
+    line-height: 1.56rem;
+    color: $white;
+    text-transform: uppercase;
+    padding: 0.81em 0.90em 0.81em 4.05em;
+    margin-left: 0.86em;
+    background-color: $bg-range;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 1.67em;
+      height: 1.67em;
+      background-image: url(../../img/ico-actions.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0.52em;
+      left: 1.19em;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../../img/ico-actions@x2.png);
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 7.52em;
+      height: 2.28em;
+      border: 1px dashed #FFFFFF;
+      border-radius: 0.14em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+.page-footer__content {
+  @include font-size(1.37rem, 1.60rem);
+  margin: auto;
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    @include font-size(1.25rem, 1.45rem);
+  }
+
+  @media (min-width: $desktop) {
+    @include font-size(1.37rem, 1.62rem);
+    margin-left: 15.55em;
+  }
+}

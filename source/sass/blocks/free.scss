@@ -1,0 +1,65 @@
+.free {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.free__text {
+  @include font-size(1.5rem, 1.65rem);
+  margin-top: 1.7em;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(266.8deg, $free-gradient-right 0.02%, $free-gradient-left 101.17%);
+  border-radius: 0.25em;
+  padding: 0.25em 1.3em 0.25em 3.5em;
+  letter-spacing: 0.27em;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 2.62em;
+    height: 2.04em;
+    position: absolute;
+    top: 11px;
+    left: 5px;
+    background-image: url(../../img/icon-roulette-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/icon-roulette-mobile@x2.png);
+    }
+  }
+}
+
+.free__text-span {
+  @include font-size(1rem, 1.1rem);
+  letter-spacing: 0.3em;
+}
+
+.free__subtitle {
+  @include font-size(0.87rem, 1rem);
+  text-transform: uppercase;
+  color: $bg-range;
+  font-weight: 700;
+  padding: 0.5em 0.42em 0.28em;
+  margin: 0.4em auto 0;
+  border: 0.10em solid $bg-range;
+  border-radius: 0.28em;
+  width: 16.4em;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 0.85em;
+    height: 0.85em;
+    background-color: $white;
+    border-top: 0.10em solid $bg-range;
+    border-right: 0.10em solid $bg-range;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -57%) rotate(-45deg);
+  }
+}

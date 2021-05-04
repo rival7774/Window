@@ -1,0 +1,188 @@
+.calculator {
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &::before,
+  &::after{
+    content: "";
+    width: 100%;
+    height: 9.62em;
+    display: block;
+
+    @media (min-width: $tablet) {
+      height: 7.68em;
+    }
+
+    @media (min-width: $desktop) {
+      height: 15.5em;
+    }
+  }
+
+  &::before{
+    background-color: $bd-dark-grey;
+  }
+
+  &::after {
+    background-color: $bd-light-grey;
+  }
+}
+
+.calculator__title {
+  @include font-size(1.5rem, 1.37rem);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  padding: 0 0.62em;
+  margin: 2.31em 0 1.37em 0;
+
+  @media (min-width: $tablet) {
+    @include font-size(1.87rem, 2rem);
+    padding: 0 1em;
+    margin: 1.33em 0 1.33em;
+  }
+
+  @media (min-width: $desktop) {
+    @include font-size(2.5rem, 3.12rem);
+    padding-left: calc(50% - 36.0625rem);
+    padding-right: calc(50% - 36.0625rem);
+    margin: 1.37em 0 1.15em 0;
+    width: 100%;
+  }
+}
+
+.calculator__inner {
+  @media (min-width: $desktop) {
+    flex-basis: 47.31em;
+    padding-left: calc(50% - 36.0625rem);
+    padding-right: 0;
+    box-sizing: content-box;
+  }
+}
+
+.calculator__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.37em;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 1.51em;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 3.51em;
+    justify-content: flex-start;
+  }
+}
+
+.calculator__item {
+  text-align: center;
+
+  @media (min-width: $desktop) {
+    &:not(:nth-child(3n)) {
+      margin-right: 6.87em
+    }
+  }
+}
+
+.calculator__description {
+  @include font-size(0.62rem, 1rem);
+  letter-spacing: 0.03em;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    @include font-size(0.87rem, 0.87rem);
+    margin-bottom: 0.66em;
+  }
+
+  @media (min-width: $desktop) {
+    @include font-size(0.75rem, 1rem);
+  }
+
+  &::before {
+    content: "";
+    width: 6.5em;
+    height: 6.5em;
+    background-color: $bg-menu;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet) {
+      margin: 0 auto 1.04em;
+      width: 10em;
+      height: 10em;
+    }
+  }
+
+  &--sum::before {
+    background-image: url(../../img/icon-rub-mobile.png);
+    background-size: 2.5em, 3.4em;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/icon-rub-mobile@x2.png);
+    }
+
+    @media (min-width: $tablet) {
+      background-image: url(../../img/icon-rub-tablet.png);
+      background-size: 3.91em, 2.83em;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../../img/icon-rub-tablet@x2.png);
+      }
+    }
+  }
+
+  &--decision::before {
+    background-image: url(../../img/icon-clock-mobile.png);
+    background-size: 3.33em, 3.4em;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/icon-clock-mobile@x2.png);
+    }
+
+    @media (min-width: $tablet) {
+      background-image: url(../../img/icon-clock-tablet.png);
+      background-size: 5.16em, 5.16em;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../../img/icon-clock-tablet@x2.png);
+      }
+    }
+  }
+
+  &--conditions::before {
+    background-image: url(../../img/icon-document-mobile.png);
+    background-size: 2.9em, 3.42em;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/icon-document-mobile@x2.png);
+    }
+
+    @media (min-width: $tablet) {
+      background-image: url(../../img/icon-document-tablet.png);
+      background-size: 4.41em, 5.25em;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../../img/icon-document-tablet@x2.png);
+      }
+    }
+  }
+}
+
+.calculator__value {
+  @include font-size(1rem, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  @media (min-width: $tablet) {
+    font-size: 1.25em;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 1.5em;
+  }
+}

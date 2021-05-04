@@ -1,0 +1,226 @@
+.manufacturer {
+  position: relative;
+}
+
+.manufacturer__conteiner {
+  @include padding-top-bottom(3.75em, 2.7em);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient( transparent 15%, $white 28%), url(../../img/man-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient( transparent 15%, $white 28%), url(../../img/man-mobile@x2.jpg);
+  }
+
+  @media (min-width: $tablet) {
+    @include padding-top-bottom(1.68em, 2.25em);
+    flex-direction: row;
+    background-image: url(../../img/man-tablet.jpg);
+    text-align: start;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/man-tablet@x2.jpg);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% + 5.6em);
+      padding-top: 100%;
+      border-radius: 50%;
+      top: -37%;
+      left: -60%;
+      background: repeating-linear-gradient(-35deg, $gradient-05, $gradient-05 0.0625em, transparent 0.125em, transparent 0.3125em),
+      radial-gradient($gradient-center 29%, $gradient-top 71%);
+    }
+  }
+
+
+  @media (min-width: $desktop) {
+    @include padding-top-bottom(0, 0);
+    padding-right: 0;
+    background-image: none;
+
+    &::before {
+      width: 2625px;
+      height: 2393px;
+      top: -83%;
+      left: calc(50% - 2463px);
+    }
+  }
+}
+
+.manufacturer__content {
+  order: 2;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    order: 1;
+  }
+}
+
+.manufacturer__title {
+  @include font-size(2rem, 2.4rem);
+  font-weight: 900;
+  text-shadow: 0.06em 0.06em 0.09em $text-shadow-25;
+  margin: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    @include font-size(1.56rem, 1.7rem);
+    text-shadow: none;
+    color: $white;
+    width: 8.44em;
+    position: relative;
+    margin-top: 0.12em;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop) {
+    @include font-size(2.5rem, 3.12rem);
+    margin: 2.02em 0 0 0.45em;
+  }
+}
+
+.manufacturer__title-span {
+  color: $bg-range;
+
+  @media (min-width: $tablet) {
+    color: $bg-menu;
+  }
+}
+
+.manufacturer__img-advantage {
+  margin: 2.2em auto 0;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet) {
+    margin-top: 1.2em;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 1.93em 0 0 1.12em;
+  }
+}
+
+.manufacturer__desc {
+  @include font-size(1.5rem, 1.74rem);
+  transform: rotate(-3deg);
+  font-weight: 700;
+  margin: -0.2em 1.4em 0 0;
+
+  @media (min-width: $tablet) {
+    @include font-size(0.93rem, 1.09rem);
+    color: $white;
+    margin: -0.2em 0 0 1.33em;
+  }
+
+  @media (min-width: $desktop) {
+    @include font-size(1.5rem, 1.75rem);
+    margin: -0.2em 0 4.4em 1.33em;
+  }
+}
+
+.manufacturer__desc-sup {
+  top: -0.2em;
+}
+
+.manufacturer__inner-img {
+  display: flex;
+  margin-bottom: 6.37em;
+  order: 1;
+
+  @media (min-width: $tablet) {
+    order: 2;
+    margin-left: auto;
+    width: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    padding: 4.12em calc(50vw - 36.06em) 0 9.81em;
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    z-index: -1;
+    background-size: cover;
+    background-position-x: right;
+    background-image: url(../../img/man-desktop.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/man-desktop@x2.jpg);
+    }
+  }
+
+  @media (min-width: $desktop) and (max-width: $min-desktop) {
+    padding: 1.12em calc(50vw - 36.06em) 0 2.81em;
+  }
+}
+
+.manufacturer__img {
+  margin-left: 0.81em;
+
+  @media (min-width: $tablet) {
+    margin-left: 1.31em;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 1.81em;
+  }
+}
+
+// .manufacturer__img--rehau {
+
+// }
+
+.manufacturer__img--kbe {
+  margin-top: 0.25em;
+
+  @media (min-width: $tablet) {
+    margin-top: 0.56em;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0.81em;
+  }
+}
+
+.manufacturer__text {
+  display: none;
+
+  @media (min-width: $desktop) {
+    @include font-size(1.18rem, 1.37rem);
+    font-weight: 900;
+    display: block;
+    padding: 0.84em 1.52em 0.68em 4.21em;
+    background-color: $bg-range;
+    border: 0.31em solid $white;
+    border-radius: 0.4em;
+    text-transform: uppercase;
+    color: $white;
+    width: 20.10em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(47%, 50%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 43px;
+      height: 50px;
+      background-image: url(../../img/icon-calculator-desktop.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0.57em;
+      left: 1.57em;
+    }
+  }
+}

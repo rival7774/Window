@@ -1,0 +1,62 @@
+.banks {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.91em;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 4.25em;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 3.62em;
+  }
+}
+
+.banks__text {
+  @include font-size(1rem, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin: 0 auto 0 0;
+
+  @media (min-width: $tablet) {
+    @include font-size(1.25rem, 1.37rem);
+    margin-right: 0.87em;
+  }
+
+  @media (min-width: $desktop) {
+    @include font-size(1.5rem, 1rem);
+    margin-right: 0.5em;
+  }
+}
+
+.banks__img {
+  margin-left: 0.25em;
+
+  @media (min-width: $tablet) {
+    margin-left: 1.31em;
+
+    &--euro {
+      width: 10.19em;
+      height: 1.69em;
+    }
+
+    &--alfa {
+      width: 7.19em;
+      height: 1.69em;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 1.87em;
+
+    &--euro {
+      width: 14.69em;
+      height: 2.44em;
+    }
+
+    &--alfa {
+      width: 10.31em;
+      height: 2.44em;
+    }
+  }
+}

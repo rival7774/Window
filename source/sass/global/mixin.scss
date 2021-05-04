@@ -1,0 +1,30 @@
+@mixin font($size, $height, $weight: 400, $family: "ALS Schlange sans") {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-family: $family, "Arial", sans-serif;
+}
+
+@mixin font-bold($size, $height, $weight: 800, $family: "ALS Schlange sans") {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-family: $family, "Arial", sans-serif;
+}
+
+@mixin font-black($size, $height, $weight: 900, $family: "ALS Schlange sans") {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-family: $family, "Arial", sans-serif;
+}
+
+@mixin font-size($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin padding-top-bottom($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}

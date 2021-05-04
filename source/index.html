@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="normalize.min.css">
+  <link rel="stylesheet" href="plagins/nouislider.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Окна</title>
+</head>
+
+<body class="page-body">
+  <header class="header">
+    <div class="logo conteiner">
+      <div class="logo__inner">
+        <!-- <img class="logo__img img" width="209" height="64" src="img/icon-logo.svg" alt="Логотип евро окон"> -->
+        <a class="logo__link">
+          <svg class="logo__img" width="209" height="64">
+            <use href="img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <p class="logo__text text">Официальный производитель</p>
+      </div>
+
+      <p class="logo__content text">Шапка</p>
+    </div>
+    <!--main-menu--no-js - если js не работает или не настроен то меню должно быть открыто-->
+    <nav class="menu conteiner">
+      <p class="menu__text text">Меню</p>
+      <!--menu__list--active - визуализирует меню-->
+      <ul class="menu__list list">
+        <li class="menu__item item">пункт 1</li>
+        <li class="menu__item item">пункт 2</li>
+        <li class="menu__item item">пункт 3</li>
+        <li class="menu__item item">пункт 4</li>
+      </ul>
+      <!--menu__button-span--active - меняет вид кнопки меню-->
+      <button class="menu__button button" aria-label="Открыть или закрыть меню"><span
+          class="menu__button-span"></span></button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="manufacturer">
+      <div class="manufacturer__conteiner conteiner">
+        <div class="manufacturer__content">
+          <h1 class="manufacturer__title">Официальный производитель <span class="manufacturer__title-span">Текст, текст,
+              текс</span></h1>
+
+          <picture>
+            <source type="image/webp" media="(min-width: 1214px)"
+              srcset="img/rates-desktop.webp, img/rates-desktop@x2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/rates-tablet.webp, img/rates-tablet@x2.webp 2x">
+            <source type="image/webp" srcset="img/rates-mobile.webp, img/rates-mobile@x2.webp 2x">
+
+            <source media="(min-width: 1214px)" srcset="img/rates-desktop.png, img/rates-desktop@x2.png 2x">
+            <source media="(min-width: 768px)" srcset="img/rates-tablet.png, img/rates-tablet@x2.png 2x">
+            <img class="manufacturer__img-advantage img" weight="95" height="62" src="img/rates-mobile.png"
+              srcset="img/rates-mobile@x2.png 2x" alt="Цены в 1.5-2 раза ниже">
+          </picture>
+
+          <p class="manufacturer__desc text"><sup class="manufacturer__desc-sup">*</sup>cредних по Тольятти</p>
+
+          <div class="free">
+            <p class="free__text text">Бесплатный <span class="free__text-span">выезд замерщика</span></p>
+            <p class="free__subtitle text">Выезжаем в день обращения</p>
+          </div>
+        </div>
+
+        <div class="manufacturer__inner-img">
+          <picture>
+            <source type="image/webp" media="(min-width: 1214px)"
+              srcset="img/icon-rehau-quality-desktop.webp, img/icon-rehau-quality-desktop@x2.webp 2x">
+            <source type="image/webp"
+              srcset="img/icon-rehau-quality-tablet.webp, img/icon-rehau-quality-tablet@x2.webp 2x">
+
+            <source media="(min-width: 1214px)"
+              srcset="img/icon-rehau-quality-desktop.png, img/icon-rehau-quality-desktop@x2.png 2x">
+            <img class="manufacturer__img manufacturer__img--rehau img" weight="68" height="71"
+              src="img/icon-rehau-quality-tablet.png" srcset="img/icon-rehau-quality-tablet@x2.png 2x"
+              alt="Компания rehau qualiti">
+          </picture>
+
+          <picture>
+            <source type="image/webp" media="(min-width: 1214px)"
+              srcset="img/icon-kbe-desktop.webp, img/icon-kbe-desktop@x2.webp 2x">
+            <source type="image/webp" srcset="img/icon-kbe-tablet.webp, img/icon-kbe-tablet@x2.webp 2x">
+
+            <source media="(min-width: 1214px)" srcset="img/icon-kbe-desktop.png, img/icon-kbe-desktop@x2.png 2x">
+            <img class="manufacturer__img manufacturer__img--kbe img" weight="95" height="62"
+              src="img/icon-kbe-tablet.png" srcset="img/icon-kbe-tablet@x2.png 2x" alt="Компания rehau qualiti">
+          </picture>
+        </div>
+      </div>
+      <p class="manufacturer__text text">Получить точный расчёт и сравнить цены</p>
+    </section>
+
+    <section class="calculator">
+      <h2 class="calculator__title">Калькулятор рассрочки</h2>
+
+      <div class="calculator__inner conteiner">
+        <ul class="calculator__list list">
+          <li class="calculator__item">
+            <dd class="calculator__description calculator__description--sum">Сумма рассрочки</dd>
+            <dt class="calculator__value">до 1 млн. ₽</dt>
+          </li>
+
+          <li class="calculator__item">
+            <dd class="calculator__description calculator__description--decision">Решение по заявке</dd>
+            <dt class="calculator__value">от 3 минут</dt>
+          </li>
+
+          <li class="calculator__item">
+            <dd class="calculator__description calculator__description--conditions">Условия получения</dd>
+            <dt class="calculator__value">2 документа</dt>
+          </li>
+        </ul>
+
+        <div class="slider">
+          <div class="slider__inner">
+            <span class="slider__text">Сколько стоит остекление?</span>
+            <span type="number" class="slider__sum slider__sum--the-cost">102 000 ₽</span>
+          </div>
+
+          <div class="slider__slaider slider__slaider--sum"></div>
+
+          <div class="slider__inner">
+            <span class="slider__range">15 000 ₽</span>
+            <span class="slider__range">1 000 000 ₽</span>
+          </div>
+
+          <div class="slider__inner">
+            <p class="slider__text text">Срок рассрочки</p>
+          </div>
+
+          <div disabled class="slider__slaider slider__slaider--months"></div>
+
+          <div class="slider__inner-months">
+            <span class="slider__range slider__range--months">6 месяцев</span>
+          </div>
+        </div>
+
+        <div class="banks">
+          <p class="banks__text">Банки партнеры:</p>
+
+          <picture>
+            <source type="image/webp" media="(min-width: 1214px)"
+              srcset="img/icon-euro-bank-desktop@x2.webp, img/icon-euro-bank-desktop@x2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/icon-euro-bank-tablet@x2.webp, img/icon-euro-bank-tablet@x2.webp 2x">
+            <source type="image/webp" srcset="img/icon-euro-bank-mobile@x2.webp, img/icon-euro-bank-mobile@x2.webp 2x">
+
+            <source media="(min-width: 1214px)"
+              srcset="img/icon-euro-bank-desktop@x2.png, img/icon-euro-bank-desktop@x2.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/icon-euro-bank-tablet@x2.png, img/icon-euro-bank-tablet@x2.png 2x">
+            <img class="banks__img banks__img--euro img" width="120" height="20" src="img/icon-euro-bank-mobile.png"
+              srcset="img/icon-euro-bank-mobile@x2.png 2x" alt="Евро банк">
+          </picture>
+
+          <picture>
+            <source type="image/webp" media="(min-width: 1214px)"
+              srcset="img/icon-alfa-bank-desktop@x2.webp, img/icon-alfa-bank-desktop@x2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/icon-alfa-bank-tablet@x2.webp, img/icon-alfa-bank-tablet@x2.webp 2x">
+            <source type="image/webp" srcset="img/icon-alfa-bank-mobile@x2.webp, img/icon-alfa-bank-mobile@x2.webp 2x">
+
+            <source media="(min-width: 1214px)"
+              srcset="img/icon-alfa-bank-desktop@x2.png, img/icon-alfa-bank-desktop@x2.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/icon-alfa-bank-tablet@x2.png, img/icon-alfa-bank-tablet@x2.png 2x">
+            <img class="banks__img banks__img--alfa img" width="84" height="20" src="img/icon-alfa-bank-mobile.png"
+              srcset="img/icon-alfa-bank-mobile@x2.png 2x" alt="Альфа банк">
+          </picture>
+        </div>
+      </div>
+
+      <div class="receipt">
+        <dd class="receipt__description">Суммма рассрочки:</dd>
+        <dt class="receipt__value receipt__value--sum">102 000 ₽</dt>
+
+        <div class="receipt__inner">
+          <dd class="receipt__description receipt__description--initial">Первоначальный взнос:</dd>
+          <dt class="receipt__value receipt__value--view">10 200 ₽</dt>
+        </div>
+
+        <div class="receipt__inner">
+          <dd class="receipt__description receipt__description--overpayment">Переплата:</dd>
+          <dt class="receipt__value receipt__value--view">0 ₽</dt>
+        </div>
+
+        <dd class="receipt__description receipt__description--monthly">Ежемесячный платеж:</dd>
+        <dt class="receipt__value receipt__value--monthly">20 500 ₽</dt>
+
+        <button class="receipt__button button">Подать заявку</button>
+
+        <div class="receipt__rectangle"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p class="page-footer__text text">Текст</p>
+
+    <p class="page-footer__content">Подвал</p>
+  </footer>
+
+  <script src="plagins/nouislider.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

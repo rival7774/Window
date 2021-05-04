@@ -1,0 +1,34 @@
+$black: #000000;
+$text-shadow-25: rgba(0, 0, 0, 0.25);;
+$gradient-05: rgba(0, 0, 0, 0.05);;
+$white: #ffffff;
+$subtitle: #9A9A9A;
+$gradient-top: #47a6ce;
+$gradient-center: #007dc2;
+$bg-menu: #ffe600;
+$free-gradient-right: #FFF854;
+$free-gradient-left: #FFE03E;
+$bg-range: #f26422;
+$text-grey: #c9c9c9;
+$bd-dark-grey: #9b9a99;
+$bd-light-grey: #c7c7c7;
+$bd-slaider-grey: #c4c4c4;
+$bd-receipt-grey: #f2f2f2;
+$bd-footer: #015A76;
+
+$only-mobile: 767px;
+$tablet: 768px;
+$desktop: 1214px;
+$min-desktop: 1919px;
+
+@media (min-width: $tablet) {
+
+}
+
+@media (min-width: $desktop) {
+
+}
+
+@media (min-width: $desktop) and (max-width: $min-desktop) {
+
+}

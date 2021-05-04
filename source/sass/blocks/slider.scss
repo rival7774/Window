@@ -1,0 +1,90 @@
+// .slider {
+// }
+
+.slider__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $desktop) {
+    align-items: flex-start;
+  }
+}
+
+.slider__text {
+  @include font-size(1rem, 1rem);
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  margin-bottom: 0.81em;
+
+  @media (min-width: $tablet) {
+    font-size: 1.25em;
+    margin-bottom: 0.75em;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 1.5rem;
+    margin-bottom: 1.25em;
+  }
+}
+
+.slider__sum {
+  @include font-size(1.5rem, 1rem);
+  letter-spacing: 0.03em;
+  font-weight: 900;
+
+  @media (min-width: $tablet) {
+    @include font-size(1.87rem, 2rem);
+  }
+
+  @media (min-width: $desktop) {
+    @include font-size(2.5rem, 1rem);
+  }
+}
+
+.slider__slaider {
+  margin-bottom: 0.12em;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0.37em;
+  }
+}
+
+// .slider__slaider--sum {
+// }
+
+.slider__range {
+  @include font-size(0.62rem, 1rem);
+  letter-spacing: 0.03em;
+  color: $text-grey;
+  margin-bottom: 0.4em;
+
+  &--months {
+    margin-bottom: 0.6em;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 0.75em;
+    margin-bottom: 2.08em;
+
+    &--months {
+      margin-bottom: 1.25em;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 0.87em;
+
+    &--months {
+      margin-bottom: 0.85em;
+    }
+  }
+}
+
+// .slider__slaider--months {
+// }
+
+.slider__inner-months {
+  display: flex;
+  justify-content: flex-end;
+}

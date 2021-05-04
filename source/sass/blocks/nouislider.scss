@@ -1,0 +1,39 @@
+.noUi-connects {
+  background-color: $bd-slaider-grey;
+  cursor: pointer;
+}
+
+.noUi-horizontal {
+    height: 5px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 8px;
+  height: 8px;
+  background-color: $bg-range;
+  border: none;
+  right: -2px;
+  top: -2px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+[disabled] .noUi-handle {
+  background-color: #ccc;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-target {
+  box-shadow: none;
+  border: none;
+}
+
+.noUi-connect {
+  background-color: $bg-range;
+}
+
+

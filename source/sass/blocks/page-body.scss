@@ -1,0 +1,19 @@
+
+.page-body {
+  font-family: "ALS Schlange sans", "Arial", sans-serif;
+  font-size: 1em;
+  // line-height: 0.9em;
+  background-color: $white;
+  padding: 0;
+  margin: auto;
+  min-width: 23.4rem;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

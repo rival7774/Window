@@ -119,55 +119,55 @@
   }
 
   &--sum::before {
-    background-image: url(../../img/icon-rub-mobile.png);
+    background-image: url(../img/icon-rub-mobile.png);
     background-size: 2.5em, 3.4em;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/icon-rub-mobile@x2.png);
+      background-image: url(../img/icon-rub-mobile@x2.png);
     }
 
     @media (min-width: $tablet) {
-      background-image: url(../../img/icon-rub-tablet.png);
+      background-image: url(../img/icon-rub-tablet.png);
       background-size: 3.91em, 2.83em;
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../../img/icon-rub-tablet@x2.png);
+        background-image: url(../img/icon-rub-tablet@x2.png);
       }
     }
   }
 
   &--decision::before {
-    background-image: url(../../img/icon-clock-mobile.png);
+    background-image: url(../img/icon-clock-mobile.png);
     background-size: 3.33em, 3.4em;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/icon-clock-mobile@x2.png);
+      background-image: url(../img/icon-clock-mobile@x2.png);
     }
 
     @media (min-width: $tablet) {
-      background-image: url(../../img/icon-clock-tablet.png);
+      background-image: url(../img/icon-clock-tablet.png);
       background-size: 5.16em, 5.16em;
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../../img/icon-clock-tablet@x2.png);
+        background-image: url(../img/icon-clock-tablet@x2.png);
       }
     }
   }
 
   &--conditions::before {
-    background-image: url(../../img/icon-document-mobile.png);
+    background-image: url(../img/icon-document-mobile.png);
     background-size: 2.9em, 3.42em;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/icon-document-mobile@x2.png);
+      background-image: url(../img/icon-document-mobile@x2.png);
     }
 
     @media (min-width: $tablet) {
-      background-image: url(../../img/icon-document-tablet.png);
+      background-image: url(../img/icon-document-tablet.png);
       background-size: 4.41em, 5.25em;
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../../img/icon-document-tablet@x2.png);
+        background-image: url(../img/icon-document-tablet@x2.png);
       }
     }
   }

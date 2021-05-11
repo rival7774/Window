@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preload" href="fonts/alsschlangesans.woff2" as="font">
+  <link rel="preload" href="fonts/alsschlangesans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/alsschlangesans-black.woff2" as="font">
   <link rel="stylesheet" href="normalize.min.css">
   <link rel="stylesheet" href="plagins/nouislider.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -16,9 +19,8 @@
   <header class="header">
     <div class="logo conteiner">
       <div class="logo__inner">
-        <!-- <img class="logo__img img" width="209" height="64" src="img/icon-logo.svg" alt="Логотип евро окон"> -->
         <a class="logo__link">
-          <svg class="logo__img" width="209" height="64">
+          <svg class="logo__img" width="209" height="64" aria-label="Логотип евро окон">
             <use href="img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
@@ -59,7 +61,7 @@
 
             <source media="(min-width: 1214px)" srcset="img/rates-desktop.png, img/rates-desktop@x2.png 2x">
             <source media="(min-width: 768px)" srcset="img/rates-tablet.png, img/rates-tablet@x2.png 2x">
-            <img class="manufacturer__img-advantage img" weight="95" height="62" src="img/rates-mobile.png"
+            <img class="manufacturer__img-advantage img" width="95" height="62" src="img/rates-mobile.png"
               srcset="img/rates-mobile@x2.png 2x" alt="Цены в 1.5-2 раза ниже">
           </picture>
 
@@ -80,7 +82,7 @@
 
             <source media="(min-width: 1214px)"
               srcset="img/icon-rehau-quality-desktop.png, img/icon-rehau-quality-desktop@x2.png 2x">
-            <img class="manufacturer__img manufacturer__img--rehau img" weight="68" height="71"
+            <img class="manufacturer__img manufacturer__img--rehau img" width="68" height="71"
               src="img/icon-rehau-quality-tablet.png" srcset="img/icon-rehau-quality-tablet@x2.png 2x"
               alt="Компания rehau qualiti">
           </picture>
@@ -91,7 +93,7 @@
             <source type="image/webp" srcset="img/icon-kbe-tablet.webp, img/icon-kbe-tablet@x2.webp 2x">
 
             <source media="(min-width: 1214px)" srcset="img/icon-kbe-desktop.png, img/icon-kbe-desktop@x2.png 2x">
-            <img class="manufacturer__img manufacturer__img--kbe img" weight="95" height="62"
+            <img class="manufacturer__img manufacturer__img--kbe img" width="95" height="62"
               src="img/icon-kbe-tablet.png" srcset="img/icon-kbe-tablet@x2.png 2x" alt="Компания rehau qualiti">
           </picture>
         </div>
@@ -105,25 +107,31 @@
       <div class="calculator__inner conteiner">
         <ul class="calculator__list list">
           <li class="calculator__item">
-            <dd class="calculator__description calculator__description--sum">Сумма рассрочки</dd>
-            <dt class="calculator__value">до 1 млн. ₽</dt>
+            <dl class="calculator__item-inner">
+              <dt class="calculator__value">до 1 млн. ₽</dt>
+              <dd class="calculator__description calculator__description--sum">Сумма рассрочки</dd>
+            </dl>
           </li>
 
           <li class="calculator__item">
-            <dd class="calculator__description calculator__description--decision">Решение по заявке</dd>
-            <dt class="calculator__value">от 3 минут</dt>
+            <dl class="calculator__item-inner">
+              <dt class="calculator__value">от 3 минут</dt>
+              <dd class="calculator__description calculator__description--decision">Решение по заявке</dd>
+            </dl>
           </li>
 
           <li class="calculator__item">
-            <dd class="calculator__description calculator__description--conditions">Условия получения</dd>
-            <dt class="calculator__value">2 документа</dt>
+            <dl class="calculator__item-inner">
+              <dt class="calculator__value">2 документа</dt>
+              <dd class="calculator__description calculator__description--conditions">Условия получения</dd>
+            </dl>
           </li>
         </ul>
 
         <div class="slider">
           <div class="slider__inner">
             <span class="slider__text">Сколько стоит остекление?</span>
-            <span type="number" class="slider__sum slider__sum--the-cost">102 000 ₽</span>
+            <span class="slider__sum slider__sum--the-cost">102 000 ₽</span>
           </div>
 
           <div class="slider__slaider slider__slaider--sum"></div>
@@ -180,21 +188,25 @@
       </div>
 
       <div class="receipt">
-        <dd class="receipt__description">Суммма рассрочки:</dd>
-        <dt class="receipt__value receipt__value--sum">102 000 ₽</dt>
+        <dl class="receipt__inner-sum">
+          <dt class="receipt__value receipt__value--sum">102 000 ₽</dt>
+          <dd class="receipt__description">Суммма рассрочки:</dd>
+        </dl>
 
-        <div class="receipt__inner">
-          <dd class="receipt__description receipt__description--initial">Первоначальный взнос:</dd>
+        <dl class="receipt__inner">
           <dt class="receipt__value receipt__value--view">10 200 ₽</dt>
-        </div>
+          <dd class="receipt__description receipt__description--initial">Первоначальный взнос:</dd>
+        </dl>
 
-        <div class="receipt__inner">
-          <dd class="receipt__description receipt__description--overpayment">Переплата:</dd>
+        <dl class="receipt__inner">
           <dt class="receipt__value receipt__value--view">0 ₽</dt>
-        </div>
+          <dd class="receipt__description receipt__description--overpayment">Переплата:</dd>
+        </dl>
 
-        <dd class="receipt__description receipt__description--monthly">Ежемесячный платеж:</dd>
-        <dt class="receipt__value receipt__value--monthly">20 500 ₽</dt>
+        <dl class="receipt__inner-sum">
+          <dt class="receipt__value receipt__value--monthly">20 500 ₽</dt>
+          <dd class="receipt__description receipt__description--monthly">Ежемесячный платеж:</dd>
+        </dl>
 
         <button class="receipt__button button">Подать заявку</button>
 
